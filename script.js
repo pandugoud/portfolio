@@ -1,8 +1,8 @@
 function addRec() {
     let input = document.getElementById("input").value;
 
-    if (input === "") {
-        alert("Please enter a recommendation");
+    if(input === "") {
+        alert("Please enter something");
         return;
     }
 
