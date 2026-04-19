@@ -142,7 +142,19 @@ button {
 button:hover {
     background: #007f86;
 }
-
+.popup {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    text-align: center;
+    z-index: 999;
+}
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
     section {
