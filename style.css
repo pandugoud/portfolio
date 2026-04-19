@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #222;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #00adb5;
+}
+
+/* About */
+#about {
+    text-align: center;
+    padding: 40px;
+}
+
+.profile {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#about span {
+    color: #00adb5;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 50px;
+}
+
+/* Projects */
+.project-card {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-left: 5px solid #00adb5;
+}
+
+/* Recommendations */
+.rec {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+}
+
+button {
+    padding: 10px;
+    background: #00adb5;
+    color: white;
+    border: none;
+}
+
+/* Home button */
+.home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 25px;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
