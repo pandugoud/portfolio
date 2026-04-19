@@ -1,8 +1,8 @@
 function addRec() {
     let input = document.getElementById("input").value;
 
-    if(input === "") {
-        alert("Please enter something");
+    if (input === "") {
+        alert("Please enter a recommendation");
         return;
     }
 
@@ -12,6 +12,7 @@ function addRec() {
 
     document.getElementById("list").appendChild(div);
 
+    // SHOW POPUP
     document.getElementById("popup").style.display = "block";
 
     document.getElementById("input").value = "";
