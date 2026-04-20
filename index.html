@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Professional Portfolio</title>
+<title>Developer Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
-  <div class="logo">Prathap Goud</div>
+  <div class="logo">Prathap</div>
 
   <nav>
     <a href="#about">About</a>
@@ -24,83 +25,97 @@
 </header>
 
 <!-- HERO -->
-<section class="hero">
-  <h1>Senior Full Stack Developer</h1>
-  <p>9+ Years Experience | React | Node | PHP | AWS</p>
-</section>
+<section id="about" class="hero">
+  <div class="hero-box">
+    <img src="profile.jpg" class="profile">
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About Me</h2>
+    <div>
+      <h1>Hi, I'm <span>Full Stack Developer</span></h1>
+      <p>9+ Years experience in building scalable web applications & enterprise systems.</p>
 
-  <p>
-    I am a Senior Full Stack Developer with 9+ years experience in building scalable applications using modern technologies.
-  </p>
+      <button class="btn">Download CV</button>
+    </div>
+  </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section">
-  <h2>Skills</h2>
+<section id="skills">
+<h2>Skills</h2>
 
-  <div class="skills-grid">
+<div class="grid">
 
-    <div class="skill-card"><img src="html.png"><p>HTML</p></div>
-    <div class="skill-card"><img src="css.png"><p>CSS</p></div>
-    <div class="skill-card"><img src="js.png"><p>JavaScript</p></div>
-    <div class="skill-card"><img src="react.png"><p>React</p></div>
-    <div class="skill-card"><img src="node.png"><p>Node</p></div>
-    <div class="skill-card"><img src="python.png"><p>Python</p></div>
-    <div class="skill-card"><img src="aws.png"><p>AWS</p></div>
+<div class="card"><img src="html.png"><p>HTML</p></div>
+<div class="card"><img src="css.png"><p>CSS</p></div>
+<div class="card"><img src="js.png"><p>JavaScript</p></div>
+<div class="card"><img src="react.png"><p>React</p></div>
+<div class="card"><img src="nodejs.png"><p>Node.js</p></div>
+<div class="card"><img src="php.png"><p>PHP</p></div>
+<div class="card"><img src="python.png"><p>Python</p></div>
+<div class="card"><img src="mysql.png"><p>MySQL</p></div>
+<div class="card"><img src="mongodb.png"><p>MongoDB</p></div>
+<div class="card"><img src="docker.png"><p>Docker</p></div>
+<div class="card"><img src="aws.png"><p>AWS</p></div>
+<div class="card"><img src="kubernetes.png"><p>Kubernetes</p></div>
 
-  </div>
+</div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
+<section id="projects">
+<h2>Projects</h2>
 
-  <div class="project-grid">
+<div class="projects">
 
-    <div class="project-card">
-      <h3>News Portal</h3>
-      <p>Full stack CMS based news system</p>
-    </div>
+<div class="p">
+<h3>Namaste Telangana</h3>
+<a href="http://www.ntnews.com/" target="_blank">Live →</a>
+</div>
 
-    <div class="project-card">
-      <h3>E-Learning</h3>
-      <p>Online education platform with payment integration</p>
-    </div>
+<div class="p">
+<h3>Surya News</h3>
+<a href="http://www.suryaa.com/" target="_blank">Live →</a>
+</div>
 
-    <div class="project-card">
-      <h3>Food Delivery</h3>
-      <p>Real-time delivery tracking system</p>
-    </div>
+<div class="p">
+<h3>Unilearn</h3>
+<a href="https://unilearn.com/" target="_blank">Live →</a>
+</div>
 
-  </div>
+<div class="p">
+<h3>Nohung App</h3>
+<a href="https://nohung.com/" target="_blank">Live →</a>
+</div>
+
+<div class="p">
+<h3>Creative Needs</h3>
+<a href="https://www.creativeneeds.in/" target="_blank">Live →</a>
+</div>
+
+</div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section id="recommend" class="section">
+<section id="recommend">
 
-  <h2>Testimonials</h2>
+<h2>Testimonials</h2>
 
-  <div id="list"></div>
+<div id="list"></div>
 
-  <div class="form">
-    <input id="userName" placeholder="Name">
-    <input id="userRole" placeholder="Role (HR / Developer)">
-    <input id="userCompany" placeholder="Company">
-    <input id="userMsg" placeholder="Message">
+<div class="form">
+<input id="name" placeholder="Name">
+<input id="role" placeholder="Role">
+<input id="company" placeholder="Company">
+<input id="msg" placeholder="Message">
 
-    <button onclick="addRec()">Submit</button>
-  </div>
+<button onclick="addRec()">Submit</button>
+</div>
 
 </section>
 
 <!-- POPUP -->
 <div id="popup">
   <div class="popup-box">
-    <p>✅ Added Successfully</p>
+    <p>✔ Added Successfully</p>
     <button onclick="closePopup()">OK</button>
   </div>
 </div>
