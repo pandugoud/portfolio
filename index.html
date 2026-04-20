@@ -213,23 +213,44 @@
 </section>
 
 <!-- RECOMMEND -->
-<section id="recommend" data-aos="fade-up">
+<section id="recommend">
 
-<h2>Recommendations</h2>
+    <h2 class="section-title">Testimonials</h2>
+    <p class="section-sub">What people say about my work</p>
 
-<div id="list">
-<div class="rec">Great developer</div>
-</div>
+    <div id="list" class="rec-grid">
 
-<input id="input" placeholder="Write recommendation">
-<button onclick="addRec()">Submit</button>
+        <div class="rec-card">
+            <div class="avatar">A</div>
+            <p>Excellent developer with strong technical skills.</p>
+        </div>
+
+        <div class="rec-card">
+            <div class="avatar">B</div>
+            <p>Very dedicated and quick learner.</p>
+        </div>
+
+        <div class="rec-card">
+            <div class="avatar">C</div>
+            <p>Great team player and problem solver.</p>
+        </div>
+
+    </div>
+
+    <!-- INPUT -->
+    <div class="rec-form">
+        <input type="text" id="input" placeholder="Write your feedback...">
+        <button onclick="addRec()">Submit</button>
+    </div>
 
 </section>
 
 <!-- POPUP -->
-<div id="popup">
-<p>Added!</p>
-<button onclick="closePopup()">OK</button>
+<div id="popup" class="popup">
+    <div class="popup-box">
+        <p>✅ Recommendation added successfully!</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
 </div>
 
 <!-- SCRIPTS -->
