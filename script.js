@@ -34,20 +34,31 @@ function filterProjects(type){
 }
 
 // RECOMMEND
-function addRec(){
-  let val=document.getElementById("input").value;
+function addRec() {
+    let input = document.getElementById("input").value;
 
-  if(val==="") return;
+    if (input.trim() === "") {
+        alert("Please enter something");
+        return;
+    }
 
-  let div=document.createElement("div");
-  div.className="rec";
-  div.innerText=val;
+    let div = document.createElement("div");
+    div.className = "rec-card";
 
-  document.getElementById("list").appendChild(div);
+    let firstLetter = input.charAt(0).toUpperCase();
 
-  document.getElementById("popup").style.display="block";
+    div.innerHTML = `
+        <div class="avatar">${firstLetter}</div>
+        <p>${input}</p>
+    `;
+
+    document.getElementById("list").appendChild(div);
+
+    document.getElementById("popup").style.display = "flex";
+
+    document.getElementById("input").value = "";
 }
 
-function closePopup(){
-  document.getElementById("popup").style.display="none";
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
 }
