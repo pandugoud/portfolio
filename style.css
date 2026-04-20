@@ -1,7 +1,8 @@
 body{
 margin:0;
-font-family:Arial;
-background:#f8fafc;
+font-family:system-ui;
+background:#f4f6f8;
+color:#111;
 }
 
 /* HEADER */
@@ -9,7 +10,7 @@ header{
 display:flex;
 justify-content:space-between;
 padding:20px 60px;
-background:#0f172a;
+background:#0b1220;
 color:white;
 position:sticky;
 top:0;
@@ -21,37 +22,66 @@ margin:0 15px;
 text-decoration:none;
 }
 
-/* ABOUT */
-.about-box{
+/* HERO */
+.hero{
 display:flex;
-gap:30px;
-padding:50px;
+justify-content:space-between;
+padding:60px;
 align-items:center;
 }
 
-.about-box img{
-width:150px;
-border-radius:50%;
+.hero h1{
+font-size:42px;
 }
 
-/* SKILLS */
-.skills-grid{
+.badges span{
+background:#00adb5;
+color:white;
+padding:5px 10px;
+margin:5px;
+border-radius:20px;
+display:inline-block;
+}
+
+/* EXPERIENCE */
+.exp-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
 padding:40px;
 }
 
-.skill{
+.exp-card{
 background:white;
-padding:15px;
-text-align:center;
+padding:20px;
 border-radius:10px;
+text-align:center;
 }
 
-.skill img{
-width:50px;
-height:50px;
+/* SKILLS */
+.skill-groups{
+padding:40px;
+}
+
+.group{
+margin-bottom:30px;
+}
+
+.skills{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.skills div{
+background:white;
+padding:10px;
+border-radius:10px;
+text-align:center;
+}
+
+.skills img{
+width:40px;
 }
 
 /* PROJECTS */
@@ -66,15 +96,15 @@ padding:40px;
 background:white;
 padding:20px;
 border-radius:10px;
-border:1px solid #ddd;
+border-left:4px solid #00adb5;
 }
 
 /* FORM */
 .form{
+padding:40px;
 display:grid;
 gap:10px;
 width:300px;
-padding:40px;
 }
 
 input,textarea{
@@ -95,4 +125,5 @@ align-items:center;
 .popup-box{
 background:white;
 padding:30px;
+border-radius:10px;
 }
