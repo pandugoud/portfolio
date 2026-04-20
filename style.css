@@ -1,133 +1,37 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI';
-}
-
-body{
-background:#0b1220;
-color:white;
-transition:0.4s;
-}
+body{margin:0;font-family:Arial;background:#0b1220;color:white;transition:0.4s}
+.dark{background:#0f172a;color:white}
 
 /* HEADER */
-header{
-display:flex;
-justify-content:space-between;
-padding:15px 50px;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(10px);
-position:sticky;
-top:0;
-}
-
-nav a{
-color:white;
-margin:0 12px;
-text-decoration:none;
-}
+header{display:flex;justify-content:space-between;padding:15px 50px;position:sticky;top:0;background:rgba(255,255,255,0.05);backdrop-filter:blur(10px)}
+nav a{margin:0 12px;color:white;text-decoration:none}
+header button{padding:6px 10px;background:#00d4ff;color:black;border:none;border-radius:6px;cursor:pointer}
 
 /* HERO */
-.hero{
-padding:80px;
-}
-
-.hero-box{
-display:flex;
-gap:40px;
-align-items:center;
-}
-
-.profile{
-width:150px;
-border-radius:50%;
-box-shadow:0 0 30px #00d4ff;
-}
-
-/* BUTTON */
-.btn{
-padding:10px 20px;
-background:#00d4ff;
-border:none;
-color:black;
-margin-top:10px;
-border-radius:8px;
-cursor:pointer;
-}
+.hero{padding:80px}
+.hero-box{display:flex;gap:40px;align-items:center}
+.profile{width:150px;border-radius:50%;box-shadow:0 0 30px #00d4ff}
+.btn{padding:10px 20px;background:#00d4ff;color:black;border:none;border-radius:8px;cursor:pointer;margin-top:10px}
 
 /* SKILLS */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
-gap:15px;
-padding:40px;
-}
-
-.card{
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(10px);
-padding:15px;
-text-align:center;
-border-radius:12px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.05);
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:15px;padding:20px}
+.card{background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);padding:15px;text-align:center;border-radius:12px;transition:0.3s}
+.card:hover{transform:scale(1.05)}
+.card img{width:40px}
 
 /* PROJECTS */
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-padding:40px;
-}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;padding:20px}
+.p{background:rgba(255,255,255,0.05);padding:20px;border-radius:12px}
+.p a{color:#00d4ff;text-decoration:none}
 
-.p{
-background:rgba(255,255,255,0.05);
-padding:20px;
-border-radius:12px;
-}
-
-.p a{
-color:#00d4ff;
-text-decoration:none;
-}
+/* TESTIMONIALS */
+.rec-grid{display:grid;gap:15px;margin-bottom:20px}
+.rec-card{background:rgba(255,255,255,0.05);padding:10px;border-radius:12px;display:flex;gap:10px;align-items:flex-start}
+.avatar{width:40px;height:40px;background:#00d4ff;color:white;border-radius:50%;display:flex;justify-content:center;align-items:center}
 
 /* FORM */
-.form input{
-padding:10px;
-margin:5px;
-width:200px;
-border-radius:6px;
-border:none;
-}
-
-button{
-padding:10px 15px;
-background:#00d4ff;
-border:none;
-cursor:pointer;
-}
+.form input{padding:10px;margin:5px;width:180px;border-radius:6px;border:none}
+button{padding:10px 15px;background:#00d4ff;border:none;color:black;border-radius:6px;cursor:pointer}
 
 /* POPUP */
-#popup{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-justify-content:center;
-align-items:center;
-}
-
-.popup-box{
-background:white;
-color:black;
-padding:20px;
-border-radius:10px;
-}
+#popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);justify-content:center;align-items:center;display:flex}
+.popup-box{background:white;color:black;padding:20px;border-radius:12px}
