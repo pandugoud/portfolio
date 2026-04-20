@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Senior Full Stack Portfolio</title>
+<title>Senior Developer Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -16,25 +15,32 @@
     <h2 class="logo">Prathap</h2>
 
     <nav>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#recommend">Testimonials</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <button onclick="toggleDark()">🌙</button>
 </header>
 
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Senior Full Stack Developer</h1>
+        <p>Building scalable web apps with React, Node.js, PHP & Cloud.</p>
+        <a href="#projects" class="btn">View Work</a>
+    </div>
+</section>
+
 <!-- ABOUT -->
 <section id="about">
-    <div class="about-box">
-        <img src="profile.jpg" class="profile">
+    <div class="about">
+        <img src="profile.jpg">
         <div>
-            <h1>Hi, I'm <span>Senior Full Stack Developer</span></h1>
-            <p>
-                9+ years experience in building scalable web applications using modern technologies.
-                Specializing in React, Node.js, PHP, Python & Cloud (AWS, Docker, Kubernetes).
-            </p>
+            <h2>About Me</h2>
+            <p>9+ years experience in full stack development, UI/UX, cloud deployment, and enterprise applications.</p>
         </div>
     </div>
 </section>
@@ -43,105 +49,56 @@
 <section id="skills">
     <h2>Skills</h2>
 
-    <div class="skills-grid">
-
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">React</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">Express</div>
-        <div class="skill">PHP</div>
-        <div class="skill">Python</div>
-        <div class="skill">Django</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">MongoDB</div>
-        <div class="skill">AWS</div>
-        <div class="skill">Docker</div>
-        <div class="skill">Kubernetes</div>
-
+    <div class="skills">
+        <span>HTML</span><span>CSS</span><span>JS</span>
+        <span>React</span><span>Node</span><span>PHP</span>
+        <span>Python</span><span>Django</span><span>MySQL</span>
+        <span>MongoDB</span><span>AWS</span><span>Docker</span>
+        <span>Kubernetes</span>
     </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-    <h2>Featured Projects</h2>
+    <h2>Selected Work</h2>
 
-    <div class="project-grid">
+    <div class="grid">
 
-        <div class="project-card">
-            <h3>News Portal System</h3>
-            <p>Full stack news publishing platform with admin panel & mobile support.</p>
-            <span>React • PHP • MySQL</span>
+        <div class="card">
+            <h3>News Platform</h3>
+            <p>Full stack digital news system with admin panel.</p>
         </div>
 
-        <div class="project-card">
-            <h3>E-Learning Platform</h3>
-            <p>Online learning system with payment gateway integration.</p>
-            <span>Node • Firebase • Razorpay</span>
+        <div class="card">
+            <h3>E-Learning</h3>
+            <p>Online education platform with payments.</p>
         </div>
 
-        <div class="project-card">
-            <h3>Food Delivery App</h3>
-            <p>Real-time ordering system with tracking & notifications.</p>
-            <span>React • Node • MongoDB</span>
+        <div class="card">
+            <h3>Food Delivery</h3>
+            <p>Real-time ordering & tracking system.</p>
         </div>
 
-        <div class="project-card">
-            <h3>Corporate Websites</h3>
-            <p>Built 20+ business websites for global clients.</p>
-            <span>WordPress • PHP</span>
+        <div class="card">
+            <h3>Corporate Sites</h3>
+            <p>20+ business websites delivered.</p>
         </div>
 
     </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section id="recommend">
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
 
-    <h2>Testimonials</h2>
-
-    <div id="list" class="rec-grid">
-
-        <div class="rec-card">
-            <div class="avatar">A</div>
-            <div>
-                <h4>Ravi Kumar</h4>
-                <small>HR @ TCS</small>
-                <p>Excellent developer with strong delivery skills.</p>
-            </div>
-        </div>
-
-        <div class="rec-card">
-            <div class="avatar">B</div>
-            <div>
-                <h4>John</h4>
-                <small>Tech Lead @ Infosys</small>
-                <p>Very professional and fast execution.</p>
-            </div>
-        </div>
-
+    <div class="contact-box">
+        <input placeholder="Name">
+        <input placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
     </div>
-
-    <div class="rec-form">
-        <input id="name" placeholder="Name">
-        <input id="role" placeholder="Role">
-        <input id="company" placeholder="Company">
-        <input id="msg" placeholder="Message">
-        <button onclick="addRec()">Submit</button>
-    </div>
-
 </section>
-
-<!-- POPUP -->
-<div id="popup">
-    <div class="popup-box">
-        <p>✔ Recommendation Added</p>
-        <button onclick="closePopup()">OK</button>
-    </div>
-</div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
