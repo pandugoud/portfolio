@@ -35,9 +35,9 @@ function filterProjects(type){
 
 // RECOMMEND
 function addRec() {
-    let input = document.getElementById("input").value;
+    let input = document.getElementById("input").value.trim();
 
-    if (input.trim() === "") {
+    if (input === "") {
         alert("Please enter something");
         return;
     }
@@ -54,7 +54,9 @@ function addRec() {
 
     document.getElementById("list").appendChild(div);
 
-    document.getElementById("popup").style.display = "flex";
+    // 🔥 POPUP SHOW FIX
+    let popup = document.getElementById("popup");
+    popup.style.display = "flex";
 
     document.getElementById("input").value = "";
 }
