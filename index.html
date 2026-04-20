@@ -1,99 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- Typed.js -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
 
-<!-- 🔥 Loader -->
+<!-- 🔥 LOADER -->
 <div id="loader">
-  <div class="spinner"></div>
+    <div class="spinner"></div>
 </div>
 
-<!-- 🌙 Header -->
 <header>
-  <h2 class="logo">MyPortfolio</h2>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <h2 class="logo">XXXXX</h2>
 
-  <button onclick="toggleDark()" class="toggle">🌙</button>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#recommend">Recommendations</a>
+    </nav>
+
+    <button onclick="toggleDark()" class="toggle">🌙</button>
 </header>
 
-<!-- ✨ About -->
+<!-- 🔝 HOME BUTTON -->
+<a href="#" class="home">⬆</a>
+
+<!-- ================= ABOUT ================= -->
 <section id="about" data-aos="fade-up">
-  <img src="profile.jpg" class="profile">
 
-  <h1>Hello, I'm <span id="name"></span></h1>
+    <img src="profile.jpg" class="profile">
 
-  <p>
-    Senior Full Stack Developer with experience in React, Node.js, PHP, Python, AWS and DevOps tools.
-  </p>
+    <h1>Hello, I'm <span id="name"></span></h1>
+
+    <p>
+        “I’m a passionate Senior Full Stack Developer with over 9 years of experience building scalable and modern web applications. I specialize in frontend technologies like HTML, CSS, and JavaScript, along with backend development using PHP, Node.js, Express.js, and Python. I’ve worked extensively with React.js, Django, MySQL, and MongoDB, and have hands-on experience with Docker, Kubernetes, and OpenShift. I also deploy and manage applications using AWS and cPanel.”
+    </p>
+
 </section>
 
-<!-- ✨ Skills -->
+<!-- ================= SKILLS ================= -->
 <section id="skills" data-aos="fade-up">
-  <h2>Skills</h2>
+    <h2>Skills</h2>
 
-  <div class="grid">
-    <div class="card">HTML</div>
-    <div class="card">CSS</div>
-    <div class="card">JavaScript</div>
-    <div class="card">React</div>
-    <div class="card">Node.js</div>
-    <div class="card">Python</div>
-  </div>
+    <div class="skills-container">
+
+        <div class="card"><img src="html.png"><p>HTML</p></div>
+        <div class="card"><img src="css.png"><p>CSS</p></div>
+        <div class="card"><img src="js.png"><p>JavaScript</p></div>
+        <div class="card"><img src="react.png"><p>React.js</p></div>
+        <div class="card"><img src="nude js.png"><p>Node.js</p></div>
+        <div class="card"><img src="expressjs.png"><p>Express.js</p></div>
+        <div class="card"><img src="php.png"><p>PHP</p></div>
+        <div class="card"><img src="Python.png"><p>Python</p></div>
+        <div class="card"><img src="django.png"><p>Django</p></div>
+        <div class="card"><img src="mysql.png"><p>MySQL</p></div>
+        <div class="card"><img src="MongoDB.jpg"><p>MongoDB</p></div>
+        <div class="card"><img src="Docker.png"><p>Docker</p></div>
+        <div class="card"><img src="kubernet.png"><p>Kubernetes</p></div>
+        <div class="card"><img src="openshift.png"><p>OpenShift</p></div>
+        <div class="card"><img src="aws.png"><p>AWS</p></div>
+        <div class="card"><img src="cpanel.png"><p>cPanel</p></div>
+
+    </div>
 </section>
 
-<!-- ✨ Projects -->
+<!-- ================= PROJECTS ================= -->
 <section id="projects" data-aos="fade-up">
-  <h2>Projects</h2>
+    <h2>Projects</h2>
 
-  <div class="filters">
-    <button onclick="filter('all')">All</button>
-    <button onclick="filter('web')">Web</button>
-    <button onclick="filter('app')">App</button>
-  </div>
+    <div class="project-card">
+        <h3>Namaste Telangana News Paper</h3>
+        <p><strong>Tools:</strong> Azure, Photoshop, HTML, CSS, JavaScript, Adobe XD</p>
+        <p><strong>Role:</strong> UI/UX Design, Prototyping, Agile Design</p>
+        <p><a href="http://www.ntnews.com/" target="_blank">Visit</a></p>
+        <p>Major news portal with Android app and branding.</p>
+    </div>
 
-  <div class="projects">
-    <div class="project web">News Website</div>
-    <div class="project app">Food App</div>
-    <div class="project web">E-commerce</div>
-  </div>
+    <div class="project-card">
+        <h3>Surya News Paper</h3>
+        <p><strong>Tools:</strong> HTML5, CSS3, JavaScript, PHP, MySQL</p>
+        <p><a href="http://www.suryaa.com/" target="_blank">Visit</a></p>
+        <p>Multi-language news portal (Telugu & English).</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Navya Andhra News</h3>
+        <p><a href="https://navyaandhranews.com/" target="_blank">Visit</a></p>
+        <p>Startup Telugu news portal.</p>
+    </div>
+
 </section>
 
-<!-- ✨ Contact -->
-<section id="contact" data-aos="fade-up">
-  <h2>Contact Me</h2>
+<!-- ================= RECOMMENDATIONS ================= -->
+<section id="recommend" data-aos="fade-up">
 
-  <input type="text" id="input" placeholder="Write message">
-  <button onclick="addMsg()">Send</button>
+    <h2>Recommendations</h2>
 
-  <div id="messages"></div>
+    <div id="list">
+        <div class="rec">Excellent developer with strong skills.</div>
+        <div class="rec">Very dedicated and quick learner.</div>
+        <div class="rec">Great team player and problem solver.</div>
+    </div>
+
+    <input type="text" id="input" placeholder="Write a recommendation">
+    <button onclick="addRec()">Submit</button>
+
 </section>
 
-<!-- 🔥 Popup -->
-<div id="popup">
-  Message Sent!
-  <button onclick="closePopup()">OK</button>
+<!-- ================= POPUP ================= -->
+<div id="popup" class="popup">
+    <p>Recommendation added successfully!</p>
+    <button onclick="closePopup()">OK</button>
 </div>
 
-<!-- Scripts -->
+<!-- ================= SCRIPTS ================= -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
 <script src="script.js"></script>
 
 </body>
