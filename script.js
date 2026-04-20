@@ -10,7 +10,7 @@ function toggleDark(){
 
 // TYPED
 var typed = new Typed("#name", {
-  strings:["XXXXX","Developer"],
+  strings:["Prathap goud","Developer"],
   typeSpeed:80,
   loop:true
 });
