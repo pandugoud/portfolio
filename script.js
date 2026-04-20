@@ -40,7 +40,7 @@ function addRec() {
     let company = document.getElementById("company").value.trim();
     let message = document.getElementById("input").value.trim();
 
-    if (name === "" || role === "" || company === "" || message === "") {
+    if (!name || !role || !company || !message) {
         alert("Please fill all fields");
         return;
     }
@@ -48,33 +48,29 @@ function addRec() {
     let div = document.createElement("div");
     div.className = "rec-card";
 
-    let firstLetter = name.charAt(0).toUpperCase();
-
     div.innerHTML = `
         <div class="rec-header">
-            <div class="avatar">${firstLetter}</div>
-            <div class="user-info">
+            <div class="avatar">${name.charAt(0).toUpperCase()}</div>
+            <div>
                 <h4>${name}</h4>
-                <span>${role} @ ${company}</span>
+                <small>${role} @ ${company}</small>
             </div>
         </div>
-        <p class="rec-text">"${message}"</p>
+        <p>"${message}"</p>
     `;
 
     document.getElementById("list").appendChild(div);
 
-    // Show popup
-    let popup = document.getElementById("popup");
-    popup.classList.add("show");
+    // popup show
+    document.getElementById("popup").classList.add("show");
 
-    // Clear fields
+    // clear fields
     document.getElementById("name").value = "";
     document.getElementById("role").value = "";
     document.getElementById("company").value = "";
     document.getElementById("input").value = "";
 }
 
-// Close popup
 function closePopup() {
     document.getElementById("popup").classList.remove("show");
 }
