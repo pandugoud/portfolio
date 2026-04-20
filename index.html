@@ -3,89 +3,102 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Prathap Goud | Full Stack Developer</title>
 
 <link rel="stylesheet" href="style.css">
-<!-- AOS Animation -->
+
+<!-- AOS -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- Typed.js -->
+
+<!-- Typed -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
+
 <body>
 
-<!-- HEADER -->
-<header>
+<header class="header">
   <div class="logo">Prathap Goud</div>
-  <nav>
+
+  <nav class="nav">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
-    <a href="#recommend">Testimonials</a>
+    <a href="#testimonials">Testimonials</a>
   </nav>
-  <button onclick="toggleDark()">🌙</button>
+
+  <button class="theme-btn" onclick="toggleDark()">🌙</button>
 </header>
 
 <!-- HERO -->
-<section id="about" class="section" data-aos="fade-up">
-  <div class="hero-box">
-    <img src="profile.jpg" class="profile">
-    <div>
+<section id="about" class="section hero" data-aos="fade-up">
+  <div class="hero-container">
+
+    <img src="profile.jpg" alt="Profile" class="profile-img">
+
+    <div class="hero-text">
       <h1>Hello, I'm <span id="typed"></span></h1>
-      <p>Senior Full Stack Developer with 9+ years building modern web & enterprise apps.</p>
+      <p>Full Stack Developer with 9+ years experience building scalable web applications.</p>
       <button class="btn">Download CV</button>
     </div>
+
   </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="section" data-aos="fade-up">
   <h2>Skills</h2>
+
   <div class="grid">
     <div class="card"><img src="html.png"><p>HTML</p></div>
     <div class="card"><img src="css.png"><p>CSS</p></div>
     <div class="card"><img src="js.png"><p>JavaScript</p></div>
     <div class="card"><img src="react.png"><p>React</p></div>
     <div class="card"><img src="nodejs.png"><p>Node.js</p></div>
-    <div class="card"><img src="php.png"><p>PHP</p></div>
     <div class="card"><img src="python.png"><p>Python</p></div>
-    <div class="card"><img src="mysql.png"><p>MySQL</p></div>
-    <div class="card"><img src="mongodb.png"><p>MongoDB</p></div>
-    <div class="card"><img src="docker.png"><p>Docker</p></div>
-    <div class="card"><img src="aws.png"><p>AWS</p></div>
-    <div class="card"><img src="kubernetes.png"><p>Kubernetes</p></div>
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="section" data-aos="fade-up">
   <h2>Projects</h2>
-  <div class="projects">
-    <div class="p"><h3>Namaste Telangana</h3><a href="http://www.ntnews.com/" target="_blank">Visit →</a></div>
-    <div class="p"><h3>Surya News</h3><a href="http://www.suryaa.com/" target="_blank">Visit →</a></div>
-    <div class="p"><h3>Navya Andhra</h3><a href="https://navyaandhranews.com/" target="_blank">Visit →</a></div>
-    <div class="p"><h3>Unilearn</h3><a href="https://unilearn.com/" target="_blank">Visit →</a></div>
-    <div class="p"><h3>Nohung</h3><a href="https://nohung.com/" target="_blank">Visit →</a></div>
-    <div class="p"><h3>Creative Needs</h3><a href="https://www.creativeneeds.in/" target="_blank">Visit →</a></div>
-    <div class="p"><h3>Prozonicind</h3><a href="https://prozonicind.com/" target="_blank">Visit →</a></div>
-    <div class="p"><h3>Lewtress Health</h3><a href="https://lewtress-health.com/" target="_blank">Visit →</a></div>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Namaste Telangana</h3>
+      <a href="http://www.ntnews.com/" target="_blank">Visit →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Surya News</h3>
+      <a href="http://www.suryaa.com/" target="_blank">Visit →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Unilearn</h3>
+      <a href="https://unilearn.com/" target="_blank">Visit →</a>
+    </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section id="recommend" class="section" data-aos="fade-up">
-<h2>Testimonials</h2>
-<div id="list" class="rec-grid"></div>
-<div class="form">
-  <input id="name" placeholder="Name">
-  <input id="role" placeholder="Role (HR/Dev)">
-  <input id="company" placeholder="Company">
-  <input id="msg" placeholder="Message">
-  <button onclick="addRec()">Submit</button>
-</div>
+<section id="testimonials" class="section" data-aos="fade-up">
+  <h2>Testimonials</h2>
+
+  <div id="list" class="testimonial-grid"></div>
+
+  <div class="form">
+    <input id="name" placeholder="Name">
+    <input id="role" placeholder="Role">
+    <input id="company" placeholder="Company">
+    <input id="msg" placeholder="Message">
+
+    <button onclick="addRec()">Submit</button>
+  </div>
 </section>
 
 <!-- POPUP -->
-<div id="popup">
+<div id="popup" class="popup">
   <div class="popup-box">
     <p>✅ Added Successfully!</p>
     <button onclick="closePopup()">OK</button>
@@ -94,9 +107,17 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
+
 <script>
 AOS.init();
-var typed = new Typed("#typed",{strings:["Prathap Goud","Full Stack Developer"],typeSpeed:80,loop:true});
+
+new Typed("#typed", {
+  strings: ["Prathap Goud", "Full Stack Developer"],
+  typeSpeed: 70,
+  backSpeed: 40,
+  loop: true
+});
 </script>
+
 </body>
 </html>
