@@ -3,14 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Senior Full Stack Developer Portfolio</title>
+<title>Professional Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="logo">Prathap Goud</div>
 
@@ -26,44 +25,32 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div>
-    <h1>Hi, I'm <span>Senior Full Stack Developer</span></h1>
-    <p>9+ Years Experience in Web Development, Cloud & DevOps</p>
-    <button onclick="scrollToSection('projects')">View Projects</button>
-  </div>
+  <h1>Senior Full Stack Developer</h1>
+  <p>9+ Years Experience | React | Node | PHP | AWS</p>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
   <h2>About Me</h2>
 
-  <div class="about-box">
-    <img src="profile.jpg">
-
-    <div>
-      <p>
-        Senior Full Stack Developer with 9+ years of experience in building scalable
-        web applications using HTML, CSS, JavaScript, React, Node.js, PHP, Python,
-        Django, MySQL, MongoDB and Cloud technologies like AWS, Docker & Kubernetes.
-      </p>
-    </div>
-  </div>
+  <p>
+    I am a Senior Full Stack Developer with 9+ years experience in building scalable applications using modern technologies.
+  </p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="section">
   <h2>Skills</h2>
 
-  <div class="skills">
+  <div class="skills-grid">
 
-    <div class="skill"><img src="html.png"><p>HTML</p></div>
-    <div class="skill"><img src="css.png"><p>CSS</p></div>
-    <div class="skill"><img src="js.png"><p>JavaScript</p></div>
-    <div class="skill"><img src="react.png"><p>React</p></div>
-    <div class="skill"><img src="node.png"><p>Node.js</p></div>
-    <div class="skill"><img src="python.png"><p>Python</p></div>
-    <div class="skill"><img src="django.png"><p>Django</p></div>
-    <div class="skill"><img src="aws.png"><p>AWS</p></div>
+    <div class="skill-card"><img src="html.png"><p>HTML</p></div>
+    <div class="skill-card"><img src="css.png"><p>CSS</p></div>
+    <div class="skill-card"><img src="js.png"><p>JavaScript</p></div>
+    <div class="skill-card"><img src="react.png"><p>React</p></div>
+    <div class="skill-card"><img src="node.png"><p>Node</p></div>
+    <div class="skill-card"><img src="python.png"><p>Python</p></div>
+    <div class="skill-card"><img src="aws.png"><p>AWS</p></div>
 
   </div>
 </section>
@@ -72,26 +59,21 @@
 <section id="projects" class="section">
   <h2>Projects</h2>
 
-  <div class="projects">
+  <div class="project-grid">
 
-    <div class="card">
-      <h3>Namaste Telangana</h3>
-      <p>News Portal with Mobile App & CMS</p>
+    <div class="project-card">
+      <h3>News Portal</h3>
+      <p>Full stack CMS based news system</p>
     </div>
 
-    <div class="card">
-      <h3>Surya News</h3>
-      <p>Multi-language News Platform</p>
+    <div class="project-card">
+      <h3>E-Learning</h3>
+      <p>Online education platform with payment integration</p>
     </div>
 
-    <div class="card">
-      <h3>Unilearn</h3>
-      <p>E-learning Platform with Payment System</p>
-    </div>
-
-    <div class="card">
-      <h3>Nohung Food App</h3>
-      <p>Food Delivery System with Real-time Tracking</p>
+    <div class="project-card">
+      <h3>Food Delivery</h3>
+      <p>Real-time delivery tracking system</p>
     </div>
 
   </div>
@@ -99,31 +81,20 @@
 
 <!-- TESTIMONIALS -->
 <section id="recommend" class="section">
+
   <h2>Testimonials</h2>
 
-  <div class="testimonials" id="list">
+  <div id="list"></div>
 
-    <div class="tcard">
-      <h4>Ravi Kumar (HR - Infosys)</h4>
-      <p>Excellent developer with strong technical skills.</p>
-    </div>
-
-    <div class="tcard">
-      <h4>Sarah (Tech Lead - TCS)</h4>
-      <p>Very dedicated and fast learner.</p>
-    </div>
-
-  </div>
-
-  <!-- FORM -->
   <div class="form">
-    <input id="name" placeholder="Your Name">
-    <input id="role" placeholder="Role (HR / Developer)">
-    <input id="company" placeholder="Company">
-    <input id="msg" placeholder="Message">
+    <input id="userName" placeholder="Name">
+    <input id="userRole" placeholder="Role (HR / Developer)">
+    <input id="userCompany" placeholder="Company">
+    <input id="userMsg" placeholder="Message">
 
     <button onclick="addRec()">Submit</button>
   </div>
+
 </section>
 
 <!-- POPUP -->
