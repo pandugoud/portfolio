@@ -2,27 +2,24 @@ function toggleDark(){
   document.body.classList.toggle("dark");
 }
 
-function scrollToSection(id){
-  document.getElementById(id).scrollIntoView({behavior:"smooth"});
-}
-
 function addRec(){
 
-  let name = document.getElementById("name").value;
-  let role = document.getElementById("role").value;
-  let company = document.getElementById("company").value;
-  let msg = document.getElementById("msg").value;
+  let name = document.getElementById("userName").value;
+  let role = document.getElementById("userRole").value;
+  let company = document.getElementById("userCompany").value;
+  let msg = document.getElementById("userMsg").value;
 
   if(!name || !msg){
-    alert("Fill all fields");
+    alert("Please fill required fields");
     return;
   }
 
   let div = document.createElement("div");
-  div.className="tcard";
+  div.className = "project-card";
 
   div.innerHTML = `
-    <h4>${name} (${role} - ${company})</h4>
+    <h3>${name}</h3>
+    <small>${role} @ ${company}</small>
     <p>${msg}</p>
   `;
 
@@ -30,10 +27,10 @@ function addRec(){
 
   document.getElementById("popup").style.display="flex";
 
-  document.getElementById("name").value="";
-  document.getElementById("role").value="";
-  document.getElementById("company").value="";
-  document.getElementById("msg").value="";
+  document.getElementById("userName").value="";
+  document.getElementById("userRole").value="";
+  document.getElementById("userCompany").value="";
+  document.getElementById("userMsg").value="";
 }
 
 function closePopup(){
