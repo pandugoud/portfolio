@@ -1,38 +1,33 @@
 function toggleDark(){
-  document.body.classList.toggle("dark");
+document.body.classList.toggle("dark");
 }
 
 function addRec(){
 
-  let name = document.getElementById("userName").value;
-  let role = document.getElementById("userRole").value;
-  let company = document.getElementById("userCompany").value;
-  let msg = document.getElementById("userMsg").value;
+let name=document.getElementById("name").value;
+let role=document.getElementById("role").value;
+let company=document.getElementById("company").value;
+let msg=document.getElementById("msg").value;
 
-  if(!name || !msg){
-    alert("Please fill required fields");
-    return;
-  }
+if(!name||!role||!company||!msg){
+alert("Fill all fields");
+return;
+}
 
-  let div = document.createElement("div");
-  div.className = "project-card";
+let div=document.createElement("div");
+div.style.background="rgba(255,255,255,0.1)";
+div.style.padding="10px";
+div.style.margin="10px";
+div.innerHTML=`
+<b>${name}</b> (${role} @ ${company})<br>
+${msg}
+`;
 
-  div.innerHTML = `
-    <h3>${name}</h3>
-    <small>${role} @ ${company}</small>
-    <p>${msg}</p>
-  `;
+document.getElementById("list").appendChild(div);
 
-  document.getElementById("list").appendChild(div);
-
-  document.getElementById("popup").style.display="flex";
-
-  document.getElementById("userName").value="";
-  document.getElementById("userRole").value="";
-  document.getElementById("userCompany").value="";
-  document.getElementById("userMsg").value="";
+document.getElementById("popup").style.display="flex";
 }
 
 function closePopup(){
-  document.getElementById("popup").style.display="none";
+document.getElementById("popup").style.display="none";
 }
