@@ -34,13 +34,77 @@ body {
   100%{transform:rotate(360deg);}
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 header {
-  display:flex;
-  justify-content:space-between;
-  padding:15px;
-  background:#111;
-  color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(15, 23, 42, 0.95); /* dark navy */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* UNDERLINE ANIMATION */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #00adb5;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00adb5;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* DARK MODE BUTTON */
+header button {
+    background: #00adb5;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header button:hover {
+    background: #007f86;
+    transform: scale(1.1);
 }
 
 /* SECTIONS */
