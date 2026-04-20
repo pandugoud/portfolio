@@ -35,32 +35,46 @@ function filterProjects(type){
 
 // RECOMMEND
 function addRec() {
-    let input = document.getElementById("input").value.trim();
+    let name = document.getElementById("name").value.trim();
+    let role = document.getElementById("role").value.trim();
+    let company = document.getElementById("company").value.trim();
+    let message = document.getElementById("input").value.trim();
 
-    if (input === "") {
-        alert("Please enter something");
+    if (name === "" || role === "" || company === "" || message === "") {
+        alert("Please fill all fields");
         return;
     }
 
     let div = document.createElement("div");
     div.className = "rec-card";
 
-    let firstLetter = input.charAt(0).toUpperCase();
+    let firstLetter = name.charAt(0).toUpperCase();
 
     div.innerHTML = `
-        <div class="avatar">${firstLetter}</div>
-        <p>${input}</p>
+        <div class="rec-header">
+            <div class="avatar">${firstLetter}</div>
+            <div class="user-info">
+                <h4>${name}</h4>
+                <span>${role} @ ${company}</span>
+            </div>
+        </div>
+        <p class="rec-text">"${message}"</p>
     `;
 
     document.getElementById("list").appendChild(div);
 
-    // 🔥 POPUP SHOW FIX
+    // Show popup
     let popup = document.getElementById("popup");
-    popup.style.display = "flex";
+    popup.classList.add("show");
 
+    // Clear fields
+    document.getElementById("name").value = "";
+    document.getElementById("role").value = "";
+    document.getElementById("company").value = "";
     document.getElementById("input").value = "";
 }
 
+// Close popup
 function closePopup() {
-    document.getElementById("popup").style.display = "none";
+    document.getElementById("popup").classList.remove("show");
 }
