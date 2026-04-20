@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Professional Portfolio</title>
+
+<title>Senior Full Stack Developer</title>
 
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
@@ -11,91 +12,167 @@
 
 <body>
 
+<!-- HEADER -->
 <header>
-    <div class="logo">Prathap</div>
+    <div class="logo">Prathap Goud</div>
+
     <nav>
-        <a href="#about">About</a>
+        <a href="#about">Profile</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#recommend">Testimonials</a>
+        <a href="#testimonials">Testimonials</a>
     </nav>
 </header>
 
-<!-- ABOUT -->
-<section id="about">
-    <div class="about-box">
-        <img src="profile.jpg">
-        <div>
-            <h1>Hello, I'm <span>Prathap Goud</span></h1>
-            <p>Full Stack Developer with 9+ years experience in modern web development.</p>
+<!-- HERO -->
+<section id="about" class="hero">
+
+    <div class="hero-left">
+        <h1>Senior Full Stack Developer</h1>
+
+        <p>
+            9+ Years of experience in designing, developing & deploying scalable web applications,
+            cloud solutions and enterprise systems.
+        </p>
+
+        <div class="badges">
+            <span>Full Stack</span>
+            <span>Cloud (AWS)</span>
+            <span>DevOps</span>
+            <span>System Design</span>
         </div>
     </div>
+
+    <div class="hero-right">
+        <img src="profile.jpg">
+    </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+
+    <h2>Experience Overview</h2>
+
+    <div class="exp-grid">
+
+        <div class="exp-card">
+            <h3>9+ Years</h3>
+            <p>Professional Experience</p>
+        </div>
+
+        <div class="exp-card">
+            <h3>50+</h3>
+            <p>Projects Delivered</p>
+        </div>
+
+        <div class="exp-card">
+            <h3>20+</h3>
+            <p>Enterprise Clients</p>
+        </div>
+
+        <div class="exp-card">
+            <h3>Cloud + DevOps</h3>
+            <p>Production Deployments</p>
+        </div>
+
+    </div>
+
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-    <h2>Skills</h2>
 
-    <div class="skills-grid">
+    <h2>Technology Expertise</h2>
 
-        <div class="skill"><img src="html.png"><p>HTML</p></div>
-        <div class="skill"><img src="css.png"><p>CSS</p></div>
-        <div class="skill"><img src="js.png"><p>JavaScript</p></div>
-        <div class="skill"><img src="react.png"><p>React</p></div>
-        <div class="skill"><img src="nude js.png"><p>Node.js</p></div>
-        <div class="skill"><img src="expressjs.png"><p>Express</p></div>
-        <div class="skill"><img src="php.png"><p>PHP</p></div>
-        <div class="skill"><img src="Python.png"><p>Python</p></div>
-        <div class="skill"><img src="django.png"><p>Django</p></div>
-        <div class="skill"><img src="mysql.png"><p>MySQL</p></div>
-        <div class="skill"><img src="MongoDB.jpg"><p>MongoDB</p></div>
-        <div class="skill"><img src="Docker.png"><p>Docker</p></div>
-        <div class="skill"><img src="kubernet.png"><p>Kubernetes</p></div>
-        <div class="skill"><img src="openshift.png"><p>OpenShift</p></div>
-        <div class="skill"><img src="aws.png"><p>AWS</p></div>
-        <div class="skill"><img src="cpanel.png"><p>cPanel</p></div>
+    <div class="skill-groups">
+
+        <div class="group">
+            <h3>Frontend</h3>
+            <div class="skills">
+                <div><img src="html.png"><p>HTML</p></div>
+                <div><img src="css.png"><p>CSS</p></div>
+                <div><img src="js.png"><p>JS</p></div>
+                <div><img src="react.png"><p>React</p></div>
+            </div>
+        </div>
+
+        <div class="group">
+            <h3>Backend</h3>
+            <div class="skills">
+                <div><img src="php.png"><p>PHP</p></div>
+                <div><img src="nude js.png"><p>Node</p></div>
+                <div><img src="Python.png"><p>Python</p></div>
+                <div><img src="django.png"><p>Django</p></div>
+            </div>
+        </div>
+
+        <div class="group">
+            <h3>Database</h3>
+            <div class="skills">
+                <div><img src="mysql.png"><p>MySQL</p></div>
+                <div><img src="MongoDB.jpg"><p>MongoDB</p></div>
+            </div>
+        </div>
+
+        <div class="group">
+            <h3>Cloud & DevOps</h3>
+            <div class="skills">
+                <div><img src="aws.png"><p>AWS</p></div>
+                <div><img src="Docker.png"><p>Docker</p></div>
+                <div><img src="kubernet.png"><p>K8s</p></div>
+                <div><img src="openshift.png"><p>OpenShift</p></div>
+            </div>
+        </div>
 
     </div>
+
 </section>
 
-<!-- PROJECTS (FULL LIST RESTORED) -->
+<!-- PROJECTS -->
 <section id="projects">
-    <h2>Projects</h2>
+
+    <h2>Key Projects (Case Studies)</h2>
 
     <div class="project-grid">
 
-        <div class="project-card"><h3>Namaste Telangana</h3><p>News portal with branding & mobile app.</p></div>
-        <div class="project-card"><h3>Surya News</h3><p>Multi-language news portal.</p></div>
-        <div class="project-card"><h3>Navya Andhra</h3><p>Startup news website.</p></div>
-        <div class="project-card"><h3>Unilearn</h3><p>E-learning platform with payments.</p></div>
-        <div class="project-card"><h3>Nohung</h3><p>Food delivery system.</p></div>
-        <div class="project-card"><h3>Prozonicind</h3><p>Corporate WordPress site.</p></div>
-        <div class="project-card"><h3>Gluven</h3><p>UPVC company website.</p></div>
-        <div class="project-card"><h3>Leinier</h3><p>Business website.</p></div>
-        <div class="project-card"><h3>Saincher Jewellers</h3><p>Jewellery website (WIX).</p></div>
-        <div class="project-card"><h3>Creative Needs</h3><p>Branding agency site.</p></div>
-        <div class="project-card"><h3>Prolite Enterprises</h3><p>Manufacturer website.</p></div>
-        <div class="project-card"><h3>Kundan Heights</h3><p>Construction website.</p></div>
-        <div class="project-card"><h3>NCAM</h3><p>Gov innovation platform.</p></div>
-        <div class="project-card"><h3>Dr Nancy Clinic</h3><p>Medical clinic website.</p></div>
-        <div class="project-card"><h3>Rahul Cables</h3><p>Distributor website.</p></div>
-        <div class="project-card"><h3>Lewtress Health</h3><p>Health products platform.</p></div>
+        <div class="project-card">
+            <h3>News Ecosystem Platform</h3>
+            <p>High traffic Telugu news portal with admin CMS & mobile app integration.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>E-Learning Platform</h3>
+            <p>Scalable LMS system with payment gateway & user analytics.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Food Delivery System</h3>
+            <p>Real-time order tracking + backend logistics engine.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Enterprise Websites</h3>
+            <p>20+ corporate websites using WordPress, PHP & cloud hosting.</p>
+        </div>
 
     </div>
+
 </section>
 
-<!-- TESTIMONIAL -->
-<section id="recommend">
+<!-- TESTIMONIALS -->
+<section id="testimonials">
 
-    <h2>Testimonials</h2>
+    <h2>Client Feedback</h2>
 
     <div id="list"></div>
 
     <div class="form">
         <input id="name" placeholder="Name">
-        <input id="role" placeholder="Role (HR / Developer)">
+        <input id="role" placeholder="Role (HR / Manager / Client)">
         <input id="company" placeholder="Company">
-        <textarea id="msg" placeholder="Message"></textarea>
+        <textarea id="msg" placeholder="Feedback"></textarea>
 
         <button onclick="addRec()">Submit</button>
     </div>
