@@ -6,132 +6,109 @@
 <title>Professional Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
-
-<!-- AOS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<!-- Typed -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script defer src="script.js"></script>
 </head>
 
 <body>
 
-<!-- LOADER -->
-<div id="loader"><div class="spinner"></div></div>
-
 <header>
-    <h2 class="logo">Prathap</h2>
-
+    <div class="logo">Prathap</div>
     <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#recommend">Testimonials</a>
     </nav>
-
-    <button onclick="toggleDark()">🌙</button>
 </header>
 
-<a href="#" class="home">⬆</a>
-
 <!-- ABOUT -->
-<section id="about" data-aos="fade-up">
-    <img src="profile.jpg" class="profile">
-    <h1>Hello, I'm <span id="typed-name"></span></h1>
-    <p>Senior Full Stack Developer with 9+ years experience.</p>
+<section id="about">
+    <div class="about-box">
+        <img src="profile.jpg">
+        <div>
+            <h1>Hello, I'm <span>Prathap Goud</span></h1>
+            <p>Full Stack Developer with 9+ years experience in modern web development.</p>
+        </div>
+    </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" data-aos="fade-up">
-    <h2 class="section-title">Technical Skills</h2>
+<section id="skills">
+    <h2>Skills</h2>
+
     <div class="skills-grid">
-        <div class="skill-card"><h3>Frontend</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React.js</li><li>Responsive Design</li></ul></div>
-        <div class="skill-card"><h3>Backend</h3><ul><li>PHP</li><li>Node.js</li><li>Express.js</li><li>Python</li><li>Django</li></ul></div>
-        <div class="skill-card"><h3>Database</h3><ul><li>MySQL</li><li>MongoDB</li><li>Firebase</li></ul></div>
-        <div class="skill-card"><h3>DevOps & Cloud</h3><ul><li>Docker</li><li>Kubernetes</li><li>OpenShift</li><li>AWS</li><li>cPanel</li></ul></div>
-        <div class="skill-card"><h3>Tools & Design</h3><ul><li>Git & GitHub</li><li>Adobe XD</li><li>Photoshop</li><li>Figma</li></ul></div>
-        <div class="skill-card"><h3>Other Skills</h3><ul><li>REST APIs</li><li>Agile Methodology</li><li>UI/UX Design</li><li>Payment Integration</li></ul></div>
+
+        <div class="skill"><img src="html.png"><p>HTML</p></div>
+        <div class="skill"><img src="css.png"><p>CSS</p></div>
+        <div class="skill"><img src="js.png"><p>JavaScript</p></div>
+        <div class="skill"><img src="react.png"><p>React</p></div>
+        <div class="skill"><img src="nude js.png"><p>Node.js</p></div>
+        <div class="skill"><img src="expressjs.png"><p>Express</p></div>
+        <div class="skill"><img src="php.png"><p>PHP</p></div>
+        <div class="skill"><img src="Python.png"><p>Python</p></div>
+        <div class="skill"><img src="django.png"><p>Django</p></div>
+        <div class="skill"><img src="mysql.png"><p>MySQL</p></div>
+        <div class="skill"><img src="MongoDB.jpg"><p>MongoDB</p></div>
+        <div class="skill"><img src="Docker.png"><p>Docker</p></div>
+        <div class="skill"><img src="kubernet.png"><p>Kubernetes</p></div>
+        <div class="skill"><img src="openshift.png"><p>OpenShift</p></div>
+        <div class="skill"><img src="aws.png"><p>AWS</p></div>
+        <div class="skill"><img src="cpanel.png"><p>cPanel</p></div>
+
     </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- PROJECTS (FULL LIST RESTORED) -->
 <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <p class="section-sub">Selected work showcasing real-world applications</p>
+    <h2>Projects</h2>
+
     <div class="project-grid">
 
-        <div class="project-card">
-            <div class="top"><span class="tag">News</span><h3>Namaste Telangana</h3></div>
-            <p>Major Telugu news platform with mobile app and digital branding.</p>
-            <div class="meta">HTML • CSS • JS • Adobe XD</div>
-            <a href="http://www.ntnews.com/" target="_blank">Visit →</a>
-        </div>
-
-        <div class="project-card">
-            <div class="top"><span class="tag">News</span><h3>Surya News</h3></div>
-            <p>Multi-language news portal supporting Telugu & English content.</p>
-            <div class="meta">PHP • MySQL • JS</div>
-            <a href="http://www.suryaa.com/" target="_blank">Visit →</a>
-        </div>
-
-        <div class="project-card">
-            <div class="top"><span class="tag">Startup</span><h3>Navya Andhra</h3></div>
-            <p>Startup news publishing platform built for regional audience.</p>
-            <div class="meta">HTML • CSS • PHP</div>
-            <a href="https://navyaandhranews.com/" target="_blank">Visit →</a>
-        </div>
-
-        <div class="project-card">
-            <div class="top"><span class="tag">E-Learning</span><h3>Unilearn</h3></div>
-            <p>Online learning system with integrated payment gateway.</p>
-            <div class="meta">PHP • Firebase • Razorpay</div>
-            <a href="https://unilearn.com/" target="_blank">Visit →</a>
-        </div>
-
-        <div class="project-card">
-            <div class="top"><span class="tag">App</span><h3>Nohung</h3></div>
-            <p>Food delivery and ordering platform with real-time features.</p>
-            <div class="meta">PHP • Firebase</div>
-            <a href="https://nohung.com/" target="_blank">Visit →</a>
-        </div>
-
-        <div class="project-card">
-            <div class="top"><span class="tag">WordPress</span><h3>Prozonicind</h3></div>
-            <p>Corporate website for uPVC manufacturing business.</p>
-            <div class="meta">WordPress</div>
-            <a href="https://prozonicind.com/" target="_blank">Visit →</a>
-        </div>
+        <div class="project-card"><h3>Namaste Telangana</h3><p>News portal with branding & mobile app.</p></div>
+        <div class="project-card"><h3>Surya News</h3><p>Multi-language news portal.</p></div>
+        <div class="project-card"><h3>Navya Andhra</h3><p>Startup news website.</p></div>
+        <div class="project-card"><h3>Unilearn</h3><p>E-learning platform with payments.</p></div>
+        <div class="project-card"><h3>Nohung</h3><p>Food delivery system.</p></div>
+        <div class="project-card"><h3>Prozonicind</h3><p>Corporate WordPress site.</p></div>
+        <div class="project-card"><h3>Gluven</h3><p>UPVC company website.</p></div>
+        <div class="project-card"><h3>Leinier</h3><p>Business website.</p></div>
+        <div class="project-card"><h3>Saincher Jewellers</h3><p>Jewellery website (WIX).</p></div>
+        <div class="project-card"><h3>Creative Needs</h3><p>Branding agency site.</p></div>
+        <div class="project-card"><h3>Prolite Enterprises</h3><p>Manufacturer website.</p></div>
+        <div class="project-card"><h3>Kundan Heights</h3><p>Construction website.</p></div>
+        <div class="project-card"><h3>NCAM</h3><p>Gov innovation platform.</p></div>
+        <div class="project-card"><h3>Dr Nancy Clinic</h3><p>Medical clinic website.</p></div>
+        <div class="project-card"><h3>Rahul Cables</h3><p>Distributor website.</p></div>
+        <div class="project-card"><h3>Lewtress Health</h3><p>Health products platform.</p></div>
 
     </div>
 </section>
 
-<!-- RECOMMENDATIONS -->
+<!-- TESTIMONIAL -->
 <section id="recommend">
-    <h2 class="section-title">Testimonials</h2>
-    <p class="section-sub">What people say about my work</p>
 
-    <div id="list" class="rec-grid"></div>
+    <h2>Testimonials</h2>
 
-    <div class="rec-form">
-       <input type="text" id="nameInput" placeholder="Your name">
-        <input type="text" id="role" placeholder="Your Role">
-        <input type="text" id="company" placeholder="Company Name">
-        <input type="text" id="input" placeholder="Write your feedback">
+    <div id="list"></div>
+
+    <div class="form">
+        <input id="name" placeholder="Name">
+        <input id="role" placeholder="Role (HR / Developer)">
+        <input id="company" placeholder="Company">
+        <textarea id="msg" placeholder="Message"></textarea>
+
         <button onclick="addRec()">Submit</button>
     </div>
+
 </section>
 
 <!-- POPUP -->
-<div id="popup" class="popup">
+<div id="popup">
     <div class="popup-box">
-        <p>✅ Recommendation added successfully!</p>
+        <p>Recommendation Added Successfully</p>
         <button onclick="closePopup()">OK</button>
     </div>
 </div>
-
-<!-- SCRIPTS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="script.js"></script>
 
 </body>
 </html>
