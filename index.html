@@ -3,123 +3,100 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Developer Portfolio</title>
+<title>Prathap Goud | Full Stack Developer</title>
 
 <link rel="stylesheet" href="style.css">
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
-
 <body>
 
 <!-- HEADER -->
 <header>
-  <div class="logo">Prathap</div>
-
+  <div class="logo">Prathap Goud</div>
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#recommend">Testimonials</a>
   </nav>
-
   <button onclick="toggleDark()">🌙</button>
 </header>
 
 <!-- HERO -->
-<section id="about" class="hero">
+<section id="about" class="section" data-aos="fade-up">
   <div class="hero-box">
     <img src="profile.jpg" class="profile">
-
     <div>
-      <h1>Hi, I'm <span>Full Stack Developer</span></h1>
-      <p>9+ Years experience in building scalable web applications & enterprise systems.</p>
-
+      <h1>Hello, I'm <span id="typed"></span></h1>
+      <p>Senior Full Stack Developer with 9+ years building modern web & enterprise apps.</p>
       <button class="btn">Download CV</button>
     </div>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
-<h2>Skills</h2>
-
-<div class="grid">
-
-<div class="card"><img src="html.png"><p>HTML</p></div>
-<div class="card"><img src="css.png"><p>CSS</p></div>
-<div class="card"><img src="js.png"><p>JavaScript</p></div>
-<div class="card"><img src="react.png"><p>React</p></div>
-<div class="card"><img src="nodejs.png"><p>Node.js</p></div>
-<div class="card"><img src="php.png"><p>PHP</p></div>
-<div class="card"><img src="python.png"><p>Python</p></div>
-<div class="card"><img src="mysql.png"><p>MySQL</p></div>
-<div class="card"><img src="mongodb.png"><p>MongoDB</p></div>
-<div class="card"><img src="docker.png"><p>Docker</p></div>
-<div class="card"><img src="aws.png"><p>AWS</p></div>
-<div class="card"><img src="kubernetes.png"><p>Kubernetes</p></div>
-
-</div>
+<section id="skills" class="section" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card"><img src="html.png"><p>HTML</p></div>
+    <div class="card"><img src="css.png"><p>CSS</p></div>
+    <div class="card"><img src="js.png"><p>JavaScript</p></div>
+    <div class="card"><img src="react.png"><p>React</p></div>
+    <div class="card"><img src="nodejs.png"><p>Node.js</p></div>
+    <div class="card"><img src="php.png"><p>PHP</p></div>
+    <div class="card"><img src="python.png"><p>Python</p></div>
+    <div class="card"><img src="mysql.png"><p>MySQL</p></div>
+    <div class="card"><img src="mongodb.png"><p>MongoDB</p></div>
+    <div class="card"><img src="docker.png"><p>Docker</p></div>
+    <div class="card"><img src="aws.png"><p>AWS</p></div>
+    <div class="card"><img src="kubernetes.png"><p>Kubernetes</p></div>
+  </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
-<h2>Projects</h2>
-
-<div class="projects">
-
-<div class="p">
-<h3>Namaste Telangana</h3>
-<a href="http://www.ntnews.com/" target="_blank">Live →</a>
-</div>
-
-<div class="p">
-<h3>Surya News</h3>
-<a href="http://www.suryaa.com/" target="_blank">Live →</a>
-</div>
-
-<div class="p">
-<h3>Unilearn</h3>
-<a href="https://unilearn.com/" target="_blank">Live →</a>
-</div>
-
-<div class="p">
-<h3>Nohung App</h3>
-<a href="https://nohung.com/" target="_blank">Live →</a>
-</div>
-
-<div class="p">
-<h3>Creative Needs</h3>
-<a href="https://www.creativeneeds.in/" target="_blank">Live →</a>
-</div>
-
-</div>
+<section id="projects" class="section" data-aos="fade-up">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="p"><h3>Namaste Telangana</h3><a href="http://www.ntnews.com/" target="_blank">Visit →</a></div>
+    <div class="p"><h3>Surya News</h3><a href="http://www.suryaa.com/" target="_blank">Visit →</a></div>
+    <div class="p"><h3>Navya Andhra</h3><a href="https://navyaandhranews.com/" target="_blank">Visit →</a></div>
+    <div class="p"><h3>Unilearn</h3><a href="https://unilearn.com/" target="_blank">Visit →</a></div>
+    <div class="p"><h3>Nohung</h3><a href="https://nohung.com/" target="_blank">Visit →</a></div>
+    <div class="p"><h3>Creative Needs</h3><a href="https://www.creativeneeds.in/" target="_blank">Visit →</a></div>
+    <div class="p"><h3>Prozonicind</h3><a href="https://prozonicind.com/" target="_blank">Visit →</a></div>
+    <div class="p"><h3>Lewtress Health</h3><a href="https://lewtress-health.com/" target="_blank">Visit →</a></div>
+  </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section id="recommend">
-
+<section id="recommend" class="section" data-aos="fade-up">
 <h2>Testimonials</h2>
-
-<div id="list"></div>
-
+<div id="list" class="rec-grid"></div>
 <div class="form">
-<input id="name" placeholder="Name">
-<input id="role" placeholder="Role">
-<input id="company" placeholder="Company">
-<input id="msg" placeholder="Message">
-
-<button onclick="addRec()">Submit</button>
+  <input id="name" placeholder="Name">
+  <input id="role" placeholder="Role (HR/Dev)">
+  <input id="company" placeholder="Company">
+  <input id="msg" placeholder="Message">
+  <button onclick="addRec()">Submit</button>
 </div>
-
 </section>
 
 <!-- POPUP -->
 <div id="popup">
   <div class="popup-box">
-    <p>✔ Added Successfully</p>
+    <p>✅ Added Successfully!</p>
     <button onclick="closePopup()">OK</button>
   </div>
 </div>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
+<script>
+AOS.init();
+var typed = new Typed("#typed",{strings:["Prathap Goud","Full Stack Developer"],typeSpeed:80,loop:true});
+</script>
 </body>
 </html>
