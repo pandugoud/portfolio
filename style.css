@@ -1,18 +1,17 @@
 body{
   margin:0;
   font-family:Arial;
-  background:#f6f7fb;
+  background:#f5f6fa;
   color:#111;
 }
 
+/* HEADER */
 header{
   display:flex;
   justify-content:space-between;
   padding:15px 40px;
   background:#111827;
   color:white;
-  position:sticky;
-  top:0;
 }
 
 nav a{
@@ -21,80 +20,63 @@ nav a{
   text-decoration:none;
 }
 
+/* HERO */
 .hero{
-  height:80vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
   text-align:center;
-  background:linear-gradient(135deg,#111827,#1f2937);
+  padding:60px;
+  background:#1f2937;
   color:white;
 }
 
-.hero h1 span{
-  color:#00adb5;
-}
-
+/* SECTIONS */
 .section{
-  padding:60px;
+  padding:50px;
 }
 
-.about-box{
-  display:flex;
-  gap:30px;
-}
-
-.about-box img{
-  width:150px;
-  border-radius:50%;
-}
-
-.skills{
+/* SKILLS */
+.skills-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
   gap:20px;
 }
 
-.skill{
+.skill-card{
   background:white;
   padding:15px;
   text-align:center;
   border-radius:10px;
 }
 
-.skill img{
+.skill-card img{
   width:40px;
 }
 
-.projects{
+/* PROJECT */
+.project-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
 }
 
-.card{
+.project-card{
   background:white;
   padding:20px;
-  border-radius:12px;
-}
-
-.testimonials .tcard{
-  background:white;
-  padding:15px;
-  margin-bottom:10px;
   border-radius:10px;
 }
 
+/* FORM */
 .form input{
+  display:block;
+  margin:10px 0;
   padding:10px;
-  margin:5px;
+  width:250px;
 }
 
 button{
   background:#00adb5;
-  border:none;
-  padding:10px 15px;
   color:white;
+  padding:10px 15px;
+  border:none;
   cursor:pointer;
 }
 
@@ -112,6 +94,22 @@ button{
 
 .popup-box{
   background:white;
-  padding:30px;
+  padding:20px;
   border-radius:10px;
+}
+
+/* ⭐ DARK MODE FIX */
+.dark{
+  background:#0f172a;
+  color:white;
+}
+
+.dark header{
+  background:#000;
+}
+
+.dark .skill-card,
+.dark .project-card{
+  background:#1e293b;
+  color:white;
 }
